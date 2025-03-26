@@ -2,265 +2,24 @@
 // echo get_template_directory_uri();
 ?>
 
+<?php 
+  get_header();
 
-<!DOCTYPE html>
-<html lang="en">
-<!--<< Header Area >>-->
-
-<head>
-  <!-- ========== Meta Tags ========== -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="codestrup" />
-  <meta name="description" content="Rupees24" />
-  <!-- ======== Page title ============ -->
-  <title>Rupees24 – Play Games & Earn Real Cash Instantly!</title>
-  <!--<< Favcion >>-->
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.png" />
-  <!--<< Bootstrap min.css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css" />
-  <!--<< All Min Css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/all.min.css" />
-  <!--<< Animate.css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css" />
-  <!--<< Icomoon.css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/icomoon.css" />
-  <!--<< Magnific Popup.css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/magnific-popup.css" />
-  <!--<< MeanMenu.css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/meanmenu.css" />
-  <!--<< Swiper Bundle.css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/swiper-bundle.min.css" />
-  <!--<< Nice Select.css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/nice-select.css" />
-  <!--<< Color.css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/color.css" />
-  <!--<< Main.css >>-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css" />
-</head>
-
-<body>
-  <!-- Preloader Start -->
-  <div id="preloader" class="preloader">
-    <div class="animation-preloader">
-      <div class="spinner"></div>
-      <div class="txt-loading">
-        <span data-text-preloader="R" class="letters-loading"> R </span>
-        <span data-text-preloader="U" class="letters-loading"> U </span>
-        <span data-text-preloader="P" class="letters-loading"> P </span>
-        <span data-text-preloader="E" class="letters-loading"> E </span>
-        <span data-text-preloader="E" class="letters-loading"> E </span>
-        <span data-text-preloader="S" class="letters-loading"> S </span>
-        <span data-text-preloader="2" class="letters-loading"> 2 </span>
-        <span data-text-preloader="4" class="letters-loading"> 4 </span>
-      </div>
-      <p class="text-center">Loading</p>
-    </div>
-    <div class="loader">
-      <div class="row">
-        <div class="col-3 loader-section section-left">
-          <div class="bg"></div>
-        </div>
-        <div class="col-3 loader-section section-left">
-          <div class="bg"></div>
-        </div>
-        <div class="col-3 loader-section section-right">
-          <div class="bg"></div>
-        </div>
-        <div class="col-3 loader-section section-right">
-          <div class="bg"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Back To Top Start -->
-  <button id="back-top" class="back-to-top">
-    <i class="fa-regular fa-arrow-up"></i>
-  </button>
-
-  <!--<< Mouse Cursor Start >>-->
-  <div class="mouse-cursor cursor-outer"></div>
-  <div class="mouse-cursor cursor-inner"></div>
-
-  <!-- Offcanvas Area Start -->
-  <div class="fix-area">
-    <div class="offcanvas__info">
-      <div class="offcanvas__wrapper">
-        <div class="offcanvas__content">
-          <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-            <div class="offcanvas__logo">
-              <a href="/">
-                <img src="assets/img/logo/logo.png" alt="logo-img" />
-              </a>
-            </div>
-            <div class="offcanvas__close">
-              <button>
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-          </div>
-          <p class="text d-none d-xl-block">
-            Download Rupees24 & Start Earning Today!
-          </p>
-          <div class="mobile-menu fix mb-3"></div>
-          <div class="offcanvas__contact">
-            <h4>Contact Info</h4>
-            <ul>
-              <li class="d-flex align-items-center">
-                <div class="offcanvas__contact-icon">
-                  <i class="fal fa-map-marker-alt"></i>
-                </div>
-                <div class="offcanvas__contact-text">
-                  <a target="_blank" href="#">Office No.301, 3rd floor, Umed building, Nanded City rd,
-                    Pune, Maharastra-411041</a>
-                </div>
-              </li>
-              <li class="d-flex align-items-center">
-                <div class="offcanvas__contact-icon mr-15">
-                  <i class="fal fa-envelope"></i>
-                </div>
-                <div class="offcanvas__contact-text">
-                  <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@rupees24.com</span></a>
-                </div>
-              </li>
-              <li class="d-flex align-items-center">
-                <div class="offcanvas__contact-icon mr-15">
-                  <i class="fal fa-clock"></i>
-                </div>
-                <div class="offcanvas__contact-text">
-                  <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
-                </div>
-              </li>
-              <!-- <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="far fa-phone"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="tel:+11002345909">+11002345909</a>
-                                    </div>
-                                </li> -->
-            </ul>
-            <div class="header-button mt-4"></div>
-            <div class="main-button">
-              <a href="https://play.google.com/store/apps/details?id=com.rupees24.codestrup&pcampaignid=web_share"
-                target="blank">
-                <span class="theme-btn"> Get Started </span><span class="arrow-btn"><i
-                    class="fa-regular fa-arrow-up-right"></i></span></a>
-            </div>
-            <div class="social-icon d-flex align-items-center">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="offcanvas__overlay"></div>
-
-  <!-- Header Section Start -->
-  <header id="header-sticky" class="header-1">
-    <div class="container-fluid">
-      <div class="mega-menu-wrapper">
-        <div class="header-main">
-          <div class="logo">
-            <a href="/" class="header-logo">
-              <img src="assets/img/logo/logo.png" alt="logo-img" />
-            </a>
-            <a href="/" class="header-logo-2">
-              <img src="assets/img/logo/logo.png" alt="logo-img" />
-            </a>
-          </div>
-          <div class="mean__menu-wrapper">
-            <div class="main-menu">
-              <nav id="mobile-menu">
-                <ul>
-                  <li class="has-dropdown active menu-thumb">
-                    <a href="/">
-                      Home
-                    </a>
-
-                  </li>
-                  <li class="has-dropdown active d-xl-none">
-                    <a href="/" class="border-none"> Home </a>
-                  </li>
-                  <li class="has-dropdown">
-                    <a href="about.html">
-                      About Us
-
-                    </a>
-
-                  </li>
-                  <li>
-                    <a href="pricing.html">
-                      Pricing
-                      <!-- <i class="fa-solid fa-chevron-down"></i> -->
-                    </a>
-                  </li>
-                  <li>
-                    <a href="faq.html">
-                      Faq
-                      <!-- <i class="fa-solid fa-chevron-down"></i> -->
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="header-right d-flex justify-content-end align-items-center">
-            <a href="#0" class="search-trigger search-icon"><i class="fa-regular fa-magnifying-glass"></i></a>
-            <div class="main-button">
-              <a href="https://play.google.com/store/apps/details?id=com.rupees24.codestrup&pcampaignid=web_share"
-                target="_blank">
-                <span class="theme-btn"> Download App </span><span class="arrow-btn"><i
-                    class="fa-regular fa-arrow-up-right"></i></span></a>
-            </div>
-            <div class="header__hamburger d-xl-none my-auto">
-              <div class="sidebar__toggle">
-                <i class="fas fa-bars"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Search Area Start -->
-  <div class="search-wrap">
-    <div class="search-inner">
-      <i class="fas fa-times search-close" id="search-close"></i>
-      <div class="search-cell">
-        <form method="get">
-          <div class="search-field-holder">
-            <input type="search" class="main-search-input" placeholder="Search..." />
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+?>
 
   <!-- Hero Section Start -->
-  <section class="hero-section hero-2" style="background-image: url('assets/img/hero/heroo-bg-2.png')">
+  <section class="hero-section hero-2" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/hero/heroo-bg-2.png')">
     <div class="trophy-shape">
       <!-- <img src="assets/img/hero/trophy-shape.png" alt="img" /> -->
     </div>
     <div class="left-shape">
-      <img src="assets/img/hero/left-shape.png" alt="img" />
+      <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/left-shape.png" alt="img" />
     </div>
     <div class="right-shape">
-      <img src="assets/img/hero/right-shape.png" alt="img" />
+      <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/right-shape.png" alt="img" />
     </div>
     <div class="rocket-shape float-bob-y">
-      <img src="assets/img/hero/rocket-2.png" alt="img" />
+      <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/rocket-2.png" alt="img" />
     </div>
     <div class="container-fluid">
       <div class="row g-4 justify-content-between align-items-center">
@@ -288,19 +47,19 @@
         </div>
         <div class="col-lg-5">
           <div class="hero-image">
-            <img src="assets/img/hero/hero.png" alt="img" class="wow img-custom-anim-left" data-wow-duration="1.5s"
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/hero.png" alt="img" class="wow img-custom-anim-left" data-wow-duration="1.5s"
               data-wow-delay="0.3s" />
             <div class="bg-shape">
-              <img src="assets/img/hero/bg-shape-2.png" alt="img" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/bg-shape-2.png" alt="img" />
             </div>
             <div class="box-shape">
-              <img src="assets/img/hero/box-shape.png" alt="img" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/box-shape.png" alt="img" />
             </div>
             <div class="gap-shape">
-              <img src="assets/img/hero/gap-box.png" alt="img" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/gap-box.png" alt="img" />
             </div>
             <div class="cursor-shape">
-              <img src="assets/img/hero/cursor.png" alt="img" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/cursor.png" alt="img" />
             </div>
           </div>
         </div>
@@ -312,22 +71,22 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="brand-img center">
-              <img src="assets/img/brand/gamezop.png" alt="img" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/brand/gamezop.png" alt="img" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="brand-img center">
-              <img src="assets/img/brand/02.png" alt="img" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/brand/02.png" alt="img" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="brand-img center">
-              <img src="assets/img/brand/03.png" alt="img" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/brand/03.png" alt="img" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="brand-img center">
-              <img src="assets/img/brand/04.png" alt="img" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/brand/04.png" alt="img" />
             </div>
           </div>
         </div>
@@ -371,7 +130,7 @@
   <!-- Feature Section Start -->
   <section class="feature-secton section-padding fix">
     <div class="bg-shape">
-      <img src="assets/img/bg-shape-2.png" alt="img" />
+      <img src="<?php echo get_template_directory_uri() ?>/assets/img/bg-shape-2.png" alt="img" />
     </div>
     <div class="container">
       <div class="section-title-area">
@@ -439,12 +198,12 @@
   <!-- Cta Counter Section Start -->
   <section class="cta-counter-section fix section-padding pt-0">
     <div class="bg-shape">
-      <img src="assets/img/bg-shape.png" alt="img" />
+      <img src="<?php echo get_template_directory_uri() ?>/assets/img/bg-shape.png" alt="img" />
     </div>
     <div class="container">
       <div class="cta-counter-wrapper bg-cover" style="background-image: url('assets/img/game-background.jpg')">
         <div class="shape-img">
-          <img src="assets/img/counter-shape.png" alt="img" />
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/counter-shape.png" alt="img" />
         </div>
         <div class="counter-box-area">
           <div class="counter-text wow fadeInUp" data-wow-delay=".3s">
@@ -462,7 +221,7 @@
           <a href="about.html" class="circle-button">
             <i class="fa-regular fa-arrow-up-right"></i>
             <span class="text-circle">
-              <img src="assets/img/text-circlw.png" alt="" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/text-circlw.png" alt="" />
             </span>
           </a>
         </div>
@@ -852,10 +611,10 @@
   <!-- Faq Section Start -->
   <section class="faq-section section-padding pb-0">
     <div class="faq-overlay">
-      <img src="assets/img/faq-overlay.png" alt="img" />
+      <img src="<?php echo get_template_directory_uri() ?>/assets/img/faq-overlay.png" alt="img" />
     </div>
     <div class="faq-shape">
-      <img src="assets/img/faq-shape.png" alt="img" />
+      <img src="<?php echo get_template_directory_uri() ?>/assets/img/faq-shape.png" alt="img" />
     </div>
     <div class="container">
       <div class="faq-wrapper">
@@ -998,13 +757,13 @@
         <div class="row g-4 align-items-center">
           <div class="col-lg-6">
             <div class="testimonial-image">
-              <img src="assets/img/553.jpg" alt="img" class="wow img-custom-anim-left" data-wow-duration="1.5s"
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/553.jpg" alt="img" class="wow img-custom-anim-left" data-wow-duration="1.5s"
                 data-wow-delay="0.3s" />
               <div class="rocket-shape">
-                <img src="assets/img/testimonial/rocket.png" alt="img" />
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/testimonial/rocket.png" alt="img" />
               </div>
               <div class="msg-shape float-bob-y">
-                <img src="assets/img/testimonial/msg.png" alt="img" />
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/testimonial/msg.png" alt="img" />
               </div>
             </div>
           </div>
@@ -1042,7 +801,7 @@
 
                       </p>
                       <div class="icon">
-                        <img src="assets/img/testimonial/icon.png" alt="img" />
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/testimonial/icon.png" alt="img" />
                       </div>
                     </div>
                   </div>
@@ -1066,7 +825,7 @@
                         effortless. Definitely worth checking out!
                       </p>
                       <div class="icon">
-                        <img src="assets/img/testimonial/icon.png" alt="img" />
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/testimonial/icon.png" alt="img" />
                       </div>
                     </div>
                   </div>
@@ -1379,12 +1138,12 @@
   <!-- Cta Section Start -->
   <section class="cta-section section-padding pb-0">
     <div class="rokect-shape float-bob-y">
-      <img src="assets/img/rokect.png" alt="img" />
+      <img src="<?php echo get_template_directory_uri() ?>/assets/img/rokect.png" alt="img" />
     </div>
     <div class="container">
       <div class="cta-wrapper bg-cover" style="background-image: url('assets/img/cta-bg.jpg')">
         <div class="cta-img wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
-          <img src="assets/img/Avatar.png" alt="img" />
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/Avatar.png" alt="img" />
         </div>
         <h2 class="wow fadeInUp" data-wow-delay=".3s">
           Stay Connected With <br />
@@ -1399,120 +1158,6 @@
     </div>
   </section>
 
-  <!-- Footer Section Start -->
-  <section class="footer-section footer-bg fix">
-    <div class="container">
-      <div class="footer-widgets-wrapper">
-        <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <a href="/">
-                  <img src="assets/img/logo/logo.png" alt="img" />
-                </a>
-              </div>
-              <div class="footer-content">
-                <p>
-                  Sign in instantly with Google for a seamless, secure, and
-                  fast gaming experience on Rupees24!
-                </p>
-                <div class="social-icon d-flex align-items-center">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <h3>Quick Links</h3>
-              </div>
-              <ul class="list-area">
-                <li>
-                  <a href="about.html"><i class="fa-solid fa-chevrons-right"></i>About Us</a>
-                </li>
-                <li>
-                  <a href="pricing.html"><i class="fa-solid fa-chevrons-right"></i>Pricing</a>
-                </li>
-                <li>
-                  <a href="faq.html"><i class="fa-solid fa-chevrons-right"></i>FAQ’S</a>
-                </li>
-                <li>
-                  <a href="contact.html"><i class="fa-solid fa-chevrons-right"></i>Contact Us</a>
-                </li>
-                <li>
-                  <a href="terms.html"><i class="fa-solid fa-chevrons-right"></i>Terms &
-                    Conditions</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".8s">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <h3>Contact Us</h3>
-              </div>
-              <div class="footer-content">
-                <ul class="contact-info">
-                  <li>
-                    <i class="fa-solid fa-house"></i>
-                    <a href="#">Office No.301, 3rd floor, Umed building, Nanded City
-                      rd, Pune, Maharastra-411041</a>
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-envelope"></i>
-                    <a href="mailto:support@rupees24.com">support@rupees24.com</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="footer-wrapper d-flex align-items-center justify-content-between">
-          <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-            © All Copyright 2024 by Rupees24
-          </p>
-          <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
-            <li><a href="terms.html">Terms & Conditions</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <a href="#" id="scrollUp" class="scroll-icon"><i class="far fa-arrow-up"></i></a>
-    </div>
-  </section>
-
-  <!--<< All JS Plugins >>-->
-  <script src="assets/js/jquery-3.7.1.min.js"></script>
-  <!--<< Viewport Js >>-->
-  <script src="assets/js/viewport.jquery.js"></script>
-  <!--<< Bootstrap Js >>-->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <!--<< Nice Select Js >>-->
-  <script src="assets/js/jquery.nice-select.min.js"></script>
-  <!--<< Waypoints Js >>-->
-  <script src="assets/js/jquery.waypoints.js"></script>
-  <!--<< Counterup Js >>-->
-  <script src="assets/js/jquery.counterup.min.js"></script>
-  <!--<< Swiper Slider Js >>-->
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <!--<< MeanMenu Js >>-->
-  <script src="assets/js/jquery.meanmenu.min.js"></script>
-  <!--<< Magnific Popup Js >>-->
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <!--<< Wow Animation Js >>-->
-  <script src="assets/js/wow.min.js"></script>
-  <!--<< Circle Progress Js >>-->
-  <script src="assets/js/circle-progress.js"></script>
-  <!--<< Main.js >>-->
-  <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+ <?php 
+   get_footer();
+ ?>
