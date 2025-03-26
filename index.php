@@ -95,7 +95,7 @@
   </section>
 
   <!-- Brand Section Start -->
-  <!-- <div class="brand-section-22">
+  <div class="brand-section-22">
       <div class="container">
         <div class="brand-wrapper-2">
           <h4 class="brand-title">1k + Brands Trust Us</h4>
@@ -125,7 +125,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
   <!-- Feature Section Start -->
   <section class="feature-secton section-padding fix">
@@ -230,7 +230,7 @@
   </section>
 
   <!-- Service Section Start -->
-  <!-- <section class="service-section fix section-bg section-padding pt-0">
+  <section class="service-section fix section-bg section-padding pt-0">
       <div class="bg-shape-2">
         <img src="assets/img/service/bg-shape-2.png" alt="img" />
       </div>
@@ -331,10 +331,10 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
   <!-- Cta Marketing Section Start -->
-  <!-- <section class="cta-marketing section-padding pt-0">
+  <section class="cta-marketing section-padding pt-0">
       <div class="shape-img float-bob-y">
         <img src="assets/img/service/rocket-shape.png" alt="img" />
       </div>
@@ -397,10 +397,10 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
   <!-- About Section Start -->
-  <!-- <section class="about-section-2 fix section-padding pt-0">
+  <section class="about-section-2 fix section-padding pt-0">
       <div class="bg-shape">
         <img src="assets/img/about/bg-shape-2.png" alt="img" />
       </div>
@@ -495,10 +495,10 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
   <!-- Case Studies Section Start -->
-  <!-- <section
+  <section
       class="case-studies-section-2 fix section-padding bg-cover"
       style="background-image: url('assets/img/case-studies/bg.jpg')"
     >
@@ -606,7 +606,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
   <!-- Faq Section Start -->
   <section class="faq-section section-padding pb-0">
