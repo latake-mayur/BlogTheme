@@ -170,7 +170,7 @@
       <div class="mega-menu-wrapper">
         <div class="header-main">
           <div class="logo">
-            <a href="/" class="header-logo">
+            <a href="<?php echo home_url(); ?>" class="header-logo">
               <img src="<?php echo get_template_directory_uri() ?> /assets/img/logo/logo.png" alt="logo-img" />
             </a>
             <a href="/" class="header-logo-2">
