@@ -171,21 +171,50 @@
         <div class="header-main">
           <div class="logo">
             <a href="/" class="header-logo">
-              <img src="<?php echo get_template_directory_uri() ?> /assets/img/logo/logo.png" alt="logo-img" />
+              <img src="assets/img/logo/logo.png" alt="logo-img" />
             </a>
             <a href="/" class="header-logo-2">
-              <img src="<?php echo get_template_directory_uri() ?> /assets/img/logo/logo.png" alt="logo-img" />
+              <img src="assets/img/logo/logo.png" alt="logo-img" />
             </a>
           </div>
           <div class="mean__menu-wrapper">
             <div class="main-menu">
-              <?php 
-                wp_nav_menu(
-                    [
-                        "theme_location"  => "Primary_menu"
-                    ]
-                );
-              ?>
+              <nav id="mobile-menu">
+                <ul>
+                  <li class="has-dropdown active menu-thumb">
+                    <a href="/">
+                      Home
+                    </a>
+
+                  </li>
+                  <li class="has-dropdown active d-xl-none">
+                    <a href="/" class="border-none"> Home </a>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="about.html">
+                      About Us
+
+                    </a>
+
+                  </li>
+                  <li>
+                    <a href="pricing.html">
+                      Pricing
+                      <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="faq.html">
+                      Faq
+                      <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
           <div class="header-right d-flex justify-content-end align-items-center">
